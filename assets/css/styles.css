@@ -3,7 +3,7 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 70%;
 }
 
 /* khôi phục cỡ chữ mặc định tính theo rem */
@@ -344,7 +344,7 @@ a {
   margin-top: 70px;
 }
 
-.feature .body-feature {  
+.feature .body-feature {
   max-width: 1300px;
   padding: 10px 0;
   margin: 0 auto;
@@ -733,3 +733,42 @@ a {
   font-size: 1.8rem;
   line-height: normal;
 }
+
+/* JS CART  */
+.uk-breadcrumb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0;
+  list-style: none;
+}
+
+.uk-breadcrumb>* {
+  -webkit-box-flex: 0;
+  -ms-flex: none;
+  flex: none;
+}
+
+.uk-breadcrumb>*>* {
+  display: inline-block;
+}
+
+.uk-breadcrumb> :last-child>* {
+  color: #666;
+}
+
+.uk-breadcrumb> :nth-child(n + 2):not(.uk-first-column)::before {
+  content: "/";
+  display: inline-block;
+  margin: 0 20px;
+  color: #999;
+}
+
+.uk-flex-center {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
