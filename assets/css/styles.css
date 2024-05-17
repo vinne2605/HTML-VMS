@@ -6,7 +6,6 @@ html {
   font-size: 70%;
 }
 
-/* khôi phục cỡ chữ mặc định tính theo rem */
 body {
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
@@ -771,4 +770,3 @@ a {
   -ms-flex-pack: center;
   justify-content: center;
 }
-
