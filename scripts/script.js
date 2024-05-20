@@ -100,3 +100,16 @@ function increment(incrementor, target) {
     };
   });
 })();
+
+function resetFilters() {
+  const checkboxes = document.querySelectorAll('.filter-checkbox');
+  checkboxes.forEach(checkbox => {
+    checkbox.checked = false;
+  });
+
+  // Optional: Reset the price range and text inputs if needed
+  document.getElementById('price-from').value = '';
+  document.getElementById('price-to').value = '';
+  document.getElementById('price-range').value = document.getElementById('price-range').min;
+}
+

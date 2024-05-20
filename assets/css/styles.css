@@ -770,3 +770,313 @@ a {
   -ms-flex-pack: center;
   justify-content: center;
 }
+
+/* CSS for the dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #494949;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid #eee;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-toggle {
+  display: inline-block;
+  padding: 0 16px;
+  min-width: 108px;
+  line-height: 46px;
+  color: #1ebfc1;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 6px;
+  border: 1px solid #1ebfc1;
+}
+
+.dropdown-toggle:hover {
+  background: #1ebfc1;
+  color: white;
+  transition: 0.3s;
+}
+
+/* CSS for the dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 220px;
+  /* Increase the min-width to make the dropdown wider */
+  box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);
+  z-index: 1;
+  border-radius: 6px;
+  /* Add border-radius for better appearance */
+  overflow: hidden;
+  /* Prevent content overflow */
+}
+
+.dropdown-content a {
+  color: #494949;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid #eee;
+  white-space: nowrap;
+  /* Prevent text wrapping */
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-toggle {
+  display: inline-block;
+  padding: 0 16px;
+  min-width: 108px;
+  line-height: 46px;
+  color: #1ebfc1;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 6px;
+  border: 1px solid #1ebfc1;
+}
+
+.dropdown-toggle:hover {
+  background: #1ebfc1;
+  color: white;
+  transition: 0.3s;
+}
+
+/* CSS for the pagination */
+.pagination {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 24px;
+  /* Same spacing as action buttons */
+}
+
+.page-info {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #494949;
+  margin-right: 24px;
+  /* Same spacing as action buttons */
+  font-family: "Poppins", sans-serif;
+  /* Add this line to change the font */
+}
+
+.page-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: 46px;
+  /* Fixed width to create a square button */
+  height: 46px;
+  /* Fixed height to create a square button */
+  color: #1ebfc1;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 50%;
+  /* Circle shape */
+  border: 1px solid #1ebfc1;
+  margin-left: 24px;
+  /* Same spacing as action buttons */
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.6rem;
+  /* Adjust font size for the arrow icons */
+}
+
+.page-btn:hover {
+  background: #1ebfc1;
+  color: white;
+  transition: 0.3s;
+}
+
+/* Existing CSS */
+.btn {
+  color: #fff;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 0 41px;
+  min-width: 186px;
+  line-height: 68px;
+  border-radius: 14px;
+  background: #1ebfc1;
+  box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);
+  margin-top: 20px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.reset-btn {
+  background: #fff;
+  color: #f44336;
+  border: 1px solid #f44336;
+  padding: 0 20px;
+  line-height: 36px;
+  min-width: auto;
+}
+
+.reset-btn:hover {
+  background: #f44336;
+  color: #fff;
+  /* Darker red on hover */
+}
+
+.filter-btn {
+  background: #fff;
+  color: #1ebfc1;
+  /* Màu chữ trắng */
+  padding: 0 20px;
+  line-height: 36px;
+  min-width: auto;
+  margin-left: 10px;
+  border: 1px solid #1ebfc1;
+  /* Viền màu xanh */
+}
+
+.filter-btn:hover {
+  background: #17a2b8;
+  color: #fff;
+  /* Màu chữ trắng */
+}
+
+/* CSS for the filter-search section */
+.filter-search {
+  margin: 20px auto;
+  /* Đặt margin tự động ở trên và dưới, và tự động canh giữa */
+  padding: 20px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  justify-content: space-between;
+  /* Canh giữa nội dung theo chiều ngang */
+}
+
+.filter-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  /* Reduced margin */
+}
+
+.filter-header h3 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #0d1111;
+}
+
+.filter-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+  min-width: 150px;
+}
+
+.filter-group label {
+  font-size: 1.6rem;
+  color: #494949;
+  display: flex;
+  align-items: center;
+}
+
+.filter-group input[type="text"] {
+  width: 80px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.filter-group input[type="range"] {
+  width: calc(160px - 20px);
+  margin-top: 10px;
+}
+
+.filter-group input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.2);
+  margin-top: 5px;
+}
+
+.price-filter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.price-filter input[type="text"] {
+  flex: none;
+}
+
+.price-filter input[type="range"] {
+  flex: 1;
+}
+
+.filter-search {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media (max-width: 1200px) {
+  .filter-search {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .filter-group {
+    align-items: flex-start;
+  }
+}
